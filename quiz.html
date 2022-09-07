@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz Page</title>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+
+    <div class="nav">
+        <h2>Diems</h2>
+          <h3>Quiz Application using HTML CSS and JavaScript</h3>
+          <div class="quiz_timer">
+            <span id="countdown" class="time">00:00</span>
+          </div>
+
+      </div>
+
+    <div class="wrapper">
+
+      <div class="quiz">
+        <div class="quiz_header">
+            <div class="quiz_user">
+                <h4>Welcome! <span class="name"></span></h4>
+              </div>        
+         
+        </div>
+        <div class="quiz_body">
+          <div id="questions">
+          </div>
+
+          <button id="btn-next" class="btn-next" onclick="next()">Next Question</button><br>
+          <a class="gohomepage" href="./index.html">Start Again</a>
+        </div>
+      </div>
+    </div>
+
+    <p id="demo"></p>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <br>
+            <div class="socialmediasec">
+              <h5 class="white-text"><b>FOLLOW US ON</b></h5><br>
+              <a class="fa fa-facebook" href="#"></a>
+              <a class="fa fa-twitter" href="#"></a>
+              <a class="fa fa-google" href="#"></a>
+             
+              <a class="fa fa-instagram" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <h5>
+              <p>Copyright © 2022 <a>Deogiri institute of engineering and management studies, Aurangabad.</a>All rights reserved
+              </p>
+            </h5><br>
+          </div>
+        </div>
+      </footer>
+    <!-- site.js -->
+    <script src="site.js"></script>
+
+      <!-- user info -->
+      <script src="userInfo.js"></script>
+
+     <!-- timer -->
+     <script src="timer.js"></script>
+  </body>
+</html>

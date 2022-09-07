@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Quiz</title>
+    
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="nav">
+      <h2>Diems</h2>
+        <h3>Quiz Application using HTML CSS and JavaScript</h3>
+    </div>
+
+
+    <div class="wrapper">
+        <div class="instructions">
+            <h2>Instructions about quiz</h2>
+            <hr><br>
+            <p>1. There are total 10 questions in this quiz </p>
+            <p>2. Once you submit first answer, you cant come back</p>
+            <p>3. Each question have 10 points</p>
+            <p>4. All questions are compulsory</p>
+            <br>
+            <h3>All the best!</h3>
+        </div>
+        <div class="welcome_text">
+            <form class="welcome_form" name="welcome_form" onsubmit="submitForm(event)">
+                <input type="text" placeholder="Enter your name" name="name">
+                <button>Start Quiz</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <br>
+            <div class="socialmediasec">
+              <h5 class="white-text"><b>FOLLOW US ON</b></h5><br>
+              <a class="fa fa-facebook" href="#"></a>
+              <a class="fa fa-twitter" href="#"></a>
+              <a class="fa fa-google" href="#"></a>
+             
+              <a class="fa fa-instagram" href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <h5>
+              <p>Copyright © 2022 <a>Deogiri institute of engineering and management studies, Aurangabad.</a>All rights reserved
+              </p>
+            </h5><br>
+          </div>
+        </div>
+      </footer>
+    <!-- site.js -->
+    <script>
+        function submitForm(e) {
+    e.preventDefault();
+    let name = document.forms["welcome_form"]["name"].value;
+  
+    sessionStorage.setItem("name", name);
+  
+    location.href = "quiz.html";
+  }
+    </script>
+</body>
+</html>
